@@ -1,0 +1,9 @@
+1.Linear Search Practice
+https://leetcode.com/problems/remove-element
+
+2.Binary Search Practice
+https://leetcode.com/problems/search-insert-position 
+https://leetcode.com/problems/binary-search 
+
+3.Frequency Counting Practice
+https://leetcode.com/problems/top-k-frequent-elements 

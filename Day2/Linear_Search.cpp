@@ -2,21 +2,20 @@
 #include <vector>
 using namespace std;
 
-int linearSearch(vector<int>& arr, int target) {
-    for (int i = 0; i <arr.size(); i++) {
-        if (arr[i] == target)
-            return i; // return index if found
+int binarySearch(vector<int>& arr, int target) {
+    int left = 0, right = arr.size() - 1;
+    while(left <= right) {
+        int mid = left + (right - left)/2;
+        if(arr[mid] == target) return mid;
+        else if(arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
     }
-    return -1; // not found
+    return -1;
+
 }
 
 int main() {
-    vector<int> arr = {4, 2, 7, 1, 3};
+    vector<int> arr = {1, 3, 5, 7, 9, 11};
     int target = 7;
-    int index = linearSearch(arr, target);
-    if(index != -1)
-        cout << "Element found at index " << index << endl;
-    else
-        cout << "Element not found" << endl;
+    cout << "Index: " << binarySearch(arr, target) << endl;
 }
-// This code implements a simple linear search algorithm to find the index of a target element in an array.
