@@ -15,4 +15,3 @@ int main() {
         cout << it.first << " occurs " << it.second << " times\n";
     }
 }
-// This code counts the frequency of each element in an array using an unordered map and prints the results.
